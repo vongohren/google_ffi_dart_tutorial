@@ -1,0 +1,19 @@
+# Run with `dart run ffigen --config ffigen.yaml`.
+name: GoogleFfiDartTutorialBindings
+description: |
+  Bindings for `src/google_ffi_dart_tutorial.h`.
+
+  Regenerate bindings with `dart run ffigen --config ffigen.yaml`.
+output: 'lib/google_ffi_dart_tutorial_bindings_generated.dart'
+headers:
+  entry-points:
+    - 'src/google_ffi_dart_tutorial.h'
+  include-directives:
+    - 'src/google_ffi_dart_tutorial.h'
+preamble: |
+  // ignore_for_file: always_specify_types
+  // ignore_for_file: camel_case_types
+  // ignore_for_file: non_constant_identifier_names
+comments:
+  style: any
+  length: full
